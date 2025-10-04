@@ -67,6 +67,7 @@
             btn_formdn.TabIndex = 1;
             btn_formdn.Text = "Đã đăng ký? Đăng nhập tại đây";
             btn_formdn.UseVisualStyleBackColor = true;
+            btn_formdn.Click += btn_formdn_Click;
             // 
             // label2
             // 

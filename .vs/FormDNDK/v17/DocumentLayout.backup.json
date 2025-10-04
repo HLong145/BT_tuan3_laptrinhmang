@@ -1,22 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\",
+  "WorkspaceRootPath": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repoltmcb\\formdndk\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repoltmcb\\formdndk\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formdangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\formchinh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formchinh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|c:\\users\\msi vn\\desktop\\repo\\bt_tuan3_laptrinhmang\\formdndk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{95195B46-EFC8-4DEB-9E99-9091B55EAF18}|FormDNDK.csproj|solutionrelative:formdndk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,11 +54,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "FormChinh.cs",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormChinh.cs",
+              "RelativeDocumentMoniker": "FormChinh.cs",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormChinh.cs",
+              "RelativeToolTip": "FormChinh.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T15:04:38.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormChinh.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormChinh.cs",
+              "RelativeDocumentMoniker": "FormChinh.cs",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormChinh.cs [Design]",
+              "RelativeToolTip": "FormChinh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T15:04:06.706Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T15:02:02.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormDangKy.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\FormDangKy.cs",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangKy.cs",
               "RelativeDocumentMoniker": "FormDangKy.cs",
-              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\FormDangKy.cs [Design]",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangKy.cs [Design]",
               "RelativeToolTip": "FormDangKy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T13:55:10.79Z",
@@ -46,38 +104,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "FormDangNhap.cs",
-              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\FormDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "FormDangNhap.cs",
-              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\FormDangNhap.cs",
-              "RelativeToolTip": "FormDangNhap.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowCQAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangNhap.cs*",
+              "RelativeToolTip": "FormDangNhap.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T12:59:57.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FormDangNhap.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\FormDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "FormDangNhap.cs",
-              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\FormDangNhap.cs [Design]",
-              "RelativeToolTip": "FormDangNhap.cs [Design]",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangNhap.cs [Design]*",
+              "RelativeToolTip": "FormDangNhap.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T12:58:04.199Z"
+              "WhenOpened": "2025-10-04T12:58:04.199Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repoLTMCB\\FormDNDK\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "FormDangKy.cs",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangKy.cs",
+              "RelativeDocumentMoniker": "FormDangKy.cs",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDangKy.cs",
+              "RelativeToolTip": "FormDangKy.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T12:57:21.236Z"
+              "WhenOpened": "2025-10-04T15:00:01.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormChinh.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormChinh.Designer.cs",
+              "RelativeDocumentMoniker": "FormChinh.Designer.cs",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormChinh.Designer.cs",
+              "RelativeToolTip": "FormChinh.Designer.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAjwDcAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T15:14:55.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormDNDK",
+              "DocumentMoniker": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDNDK.csproj",
+              "RelativeDocumentMoniker": "FormDNDK.csproj",
+              "ToolTip": "C:\\Users\\MSI VN\\Desktop\\repo\\BT_tuan3_laptrinhmang\\FormDNDK.csproj",
+              "RelativeToolTip": "FormDNDK.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-04T15:16:03.532Z",
+              "EditorCaption": ""
             }
           ]
         }

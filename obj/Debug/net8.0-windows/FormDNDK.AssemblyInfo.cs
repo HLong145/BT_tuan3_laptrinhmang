@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormDNDK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8132b5d87232bf48cf31f50f00eb922f4dd4c78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d8a8abccdd786ce9d8087e12c049567223b1e5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormDNDK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormDNDK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -146,6 +146,7 @@
             btn_taotk.TabIndex = 9;
             btn_taotk.Text = "TẠO TÀI KHOẢN";
             btn_taotk.UseVisualStyleBackColor = false;
+            btn_taotk.Click += btn_taotk_Click;
             // 
             // cb_captcha
             // 

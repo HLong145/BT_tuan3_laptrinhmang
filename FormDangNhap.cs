@@ -36,5 +36,13 @@ namespace FormDNDK
         {
 
         }
+
+        private void btn_taotk_Click(object sender, EventArgs e)
+        {
+            FormDangKy fDK = new FormDangKy();
+            this.Hide();
+            fDK.ShowDialog();
+            this.Show();
+        }
     }
 }
