@@ -20,3 +20,15 @@ packages/
 # Other IDEs
 .vscode/
 .idea/
+# Visual Studio cache and temporary files
+.vs/
+*.user
+*.suo
+*.vsidx
+*.dtbcache.v2
+*.v2
+*.json
+
+# Build outputs
+bin/
+obj/
