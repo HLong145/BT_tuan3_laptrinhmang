@@ -147,7 +147,7 @@ namespace FormDNDK
             }
         }
         // ========================================
-        // 🧩 4. OTP (không cần lưu DB)
+        // 🧩 4. OTP 
         // ========================================
 
         private static Dictionary<string, (string Otp, DateTime ExpireAt, int Attempts)> otpStorage = new();
