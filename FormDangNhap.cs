@@ -44,5 +44,10 @@ namespace FormDNDK
             fDK.ShowDialog();
             this.Show();
         }
+
+        private void btn_dangnhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

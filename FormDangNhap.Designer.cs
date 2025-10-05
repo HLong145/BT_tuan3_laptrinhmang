@@ -97,6 +97,7 @@
             // 
             tb_pass.Location = new Point(104, 277);
             tb_pass.Name = "tb_pass";
+            tb_pass.PasswordChar = '*';
             tb_pass.Size = new Size(236, 27);
             tb_pass.TabIndex = 5;
             // 
@@ -111,6 +112,7 @@
             btn_dangnhap.TabIndex = 6;
             btn_dangnhap.Text = "ĐĂNG NHẬP";
             btn_dangnhap.UseVisualStyleBackColor = false;
+            btn_dangnhap.Click += btn_dangnhap_Click;
             // 
             // cb_remember
             // 

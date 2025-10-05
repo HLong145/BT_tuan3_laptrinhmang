@@ -75,9 +75,9 @@
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(152, 128);
             label2.Name = "label2";
-            label2.Size = new Size(38, 20);
+            label2.Size = new Size(134, 20);
             label2.TabIndex = 2;
-            label2.Text = "TÊN";
+            label2.Text = "TÊN ĐĂNG NHẬP";
             // 
             // label3
             // 
@@ -127,6 +127,7 @@
             // 
             tb_pass.Location = new Point(152, 328);
             tb_pass.Name = "tb_pass";
+            tb_pass.PasswordChar = '*';
             tb_pass.Size = new Size(203, 27);
             tb_pass.TabIndex = 8;
             // 
@@ -134,6 +135,7 @@
             // 
             tb_passok.Location = new Point(152, 409);
             tb_passok.Name = "tb_passok";
+            tb_passok.PasswordChar = '*';
             tb_passok.Size = new Size(203, 27);
             tb_passok.TabIndex = 9;
             // 
