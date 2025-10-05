@@ -49,5 +49,11 @@ namespace FormDNDK
         {
 
         }
+
+        private void btn_forgotpass_Click(object sender, EventArgs e)
+        {
+            FormQuenMatKhau formQuenMatKhau = new FormQuenMatKhau();
+            formQuenMatKhau.Show();
+        }
     }
 }
