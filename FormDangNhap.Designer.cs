@@ -71,7 +71,6 @@
             label2.Size = new Size(163, 20);
             label2.TabIndex = 1;
             label2.Text = "Đăng nhập để tiếp tục";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -92,7 +91,6 @@
             label4.Size = new Size(90, 20);
             label4.TabIndex = 3;
             label4.Text = "MẬT KHẨU";
-            label4.Click += label4_Click;
             // 
             // tb_sdtmail
             // 
@@ -170,7 +168,6 @@
             cb_captcha.TabIndex = 10;
             cb_captcha.Text = "I'm not a robot ";
             cb_captcha.UseVisualStyleBackColor = false;
-            cb_captcha.CheckedChanged += cb_captcha_CheckedChanged;
             // 
             // pictureBox1
             // 

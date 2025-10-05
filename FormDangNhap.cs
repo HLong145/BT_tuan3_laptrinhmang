@@ -23,26 +23,6 @@ namespace FormDNDK
             tb_pass.Text = string.Empty;
             tb_sdtmail.Text = string.Empty;
         }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cb_captcha_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_taotk_Click(object sender, EventArgs e)
         {
             FormDangKy fDK = new FormDangKy();
@@ -56,68 +36,90 @@ namespace FormDNDK
             string input = tb_sdtmail.Text.Trim();
             string password = tb_pass.Text;
 
-            // 🧩 1. Kiểm tra Captcha
+            // Kiểm tra Captcha
             if (!cb_captcha.Checked)
             {
-                MessageBox.Show("Vui lòng xác nhận bạn không phải robot!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng xác nhận bạn không phải robot!",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 🧩 2. Kiểm tra trống
+            // Kiểm tra trống
             if (string.IsNullOrEmpty(input) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // 🧩 3. Xác định loại thông tin (email hay số điện thoại)
-            bool isEmail = userService.IsValidEmail(input);
-            bool isPhone = userService.IsValidPhone(input);
-
-            if (!isEmail && !isPhone)
-            {
-                MessageBox.Show("Vui lòng nhập đúng định dạng email hoặc số điện thoại!", "Lỗi định dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // 🧩 4. Kiểm tra độ mạnh mật khẩu
-            if (!userService.IsValidPassword(password))
-            {
-                MessageBox.Show("Mật khẩu không hợp lệ!\nPhải có ít nhất 8 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt.",
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!",
                     "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 🧩 5. Hash mật khẩu để test (ví dụ mô phỏng)
-            string salt = userService.CreateSalt();
-            string hashedPassword = userService.HashPassword_Sha256(password, salt);
+            // Xác định loại thông tin
+            string username = input;
+            bool isEmail = userService.IsValidEmail(input);
+            bool isPhone = userService.IsValidPhone(input);
 
-            // (Hiển thị để kiểm tra logic hoạt động đúng)
-            MessageBox.Show($"✅ Định dạng hợp lệ!\n\n" +
-                            $"Loại: {(isEmail ? "Email" : "Số điện thoại")}\n" +
-                            $"Salt: {salt}\n" +
-                            $"Hash: {hashedPassword.Substring(0, 32)}...",
-                            "Kết quả kiểm tra", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // 🧩 6. (Tạm thời dừng ở đây — chưa kết nối DB)
-            // Sau này sẽ thêm: kiểm tra DB + VerifyPassword 
-
-            bool loginThanhCong = true; // Giả lập đăng nhập thành công để test chuyển form
-
-            if (loginThanhCong)
+            // Nếu là email hoặc phone, tìm username tương ứng
+            if (isEmail || isPhone)
             {
+                username = GetUsernameByContact(input, isEmail);
+
+                if (string.IsNullOrEmpty(username))
+                {
+                    MessageBox.Show("Không tìm thấy tài khoản với thông tin này!",
+                        "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+
+            // Xác thực đăng nhập
+            bool loginSuccess = userService.VerifyUserLogin(username, password);
+
+            if (loginSuccess)
+            {
+                MessageBox.Show("Đăng nhập thành công!",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 FormXacNhanDangNhapThanhCong formXacNhan = new FormXacNhanDangNhapThanhCong();
                 this.Hide();
-                formXacNhan.Show();
-               
+                formXacNhan.ShowDialog();
+                this.Close();
             }
         }
 
-    private void btn_forgotpass_Click(object sender, EventArgs e)
+
+        private string GetUsernameByContact(string contact, bool isEmail)
+        {
+            try
+            {
+                using (var conn = new Microsoft.Data.SqlClient.SqlConnection(
+                    "Server=localhost;Database=UserDB;Integrated Security=True;"))
+                {
+                    conn.Open();
+                    string query = isEmail
+                        ? "SELECT Username FROM Users WHERE Email = @Contact"
+                        : "SELECT Username FROM Users WHERE Phone = @Contact";
+
+                    using (var cmd = new Microsoft.Data.SqlClient.SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Contact", contact);
+                        var result = cmd.ExecuteScalar();
+                        return result.ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối database: " + ex.Message,
+                    "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        private void btn_forgotpass_Click(object sender, EventArgs e)
         {
             FormQuenMatKhau formQuenMatKhau = new FormQuenMatKhau();
-            formQuenMatKhau.Show();
+            this.Hide();
+            formQuenMatKhau.ShowDialog();
+            this.Show();
         }
     }
 }

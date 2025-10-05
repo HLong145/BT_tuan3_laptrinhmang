@@ -326,5 +326,39 @@ namespace FormDNDK
             }
         }
 
+        // ========================================
+        // 🧩 8. Lấy thông tin user từ username
+        // ========================================
+        public (string Email, string Phone) GetUserContact(string username)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "SELECT Email, Phone FROM Users WHERE Username = @Username";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                return (
+                                    reader["Email"]?.ToString(),
+                                    reader["Phone"]?.ToString()
+                                );
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi truy vấn thông tin user: " + ex.Message,
+                    "Lỗi DB", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return (null, null);
+        }
     }
 }
