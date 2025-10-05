@@ -150,6 +150,7 @@
             btn_dangky.TabIndex = 10;
             btn_dangky.Text = "ĐĂNG KÝ";
             btn_dangky.UseVisualStyleBackColor = false;
+            btn_dangky.Click += btn_dangky_Click;
             // 
             // cb_captcha
             // 
