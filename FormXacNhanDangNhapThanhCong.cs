@@ -8,18 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System;
+using System.Windows.Forms;
+
 namespace FormDNDK
 {
     public partial class FormXacNhanDangNhapThanhCong : Form
     {
         private FormDangNhap _formDangNhap;
 
-        // Constructor có tham số
-        public FormXacNhanDangNhapThanhCong()
+        // Constructor nhận form đăng nhập từ bên ngoài
+        public FormXacNhanDangNhapThanhCong(FormDangNhap formDangNhap)
         {
             InitializeComponent();
-            _formDangNhap = new FormDangNhap();
+            _formDangNhap = formDangNhap;
         }
+
         private void btn_dangxuat_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất không?",
@@ -30,11 +34,7 @@ namespace FormDNDK
             if (result == DialogResult.Yes)
             {
                 _formDangNhap.ClearPassword();
-
-                // 🔹 Hiện lại form đăng nhập
                 _formDangNhap.Show();
-
-                // 🔹 Đóng form hiện tại
                 this.Close();
             }
         }

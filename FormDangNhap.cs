@@ -78,7 +78,7 @@ namespace FormDNDK
                 MessageBox.Show("Đăng nhập thành công!",
                     "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                FormXacNhanDangNhapThanhCong formXacNhan = new FormXacNhanDangNhapThanhCong();
+                FormXacNhanDangNhapThanhCong formXacNhan = new FormXacNhanDangNhapThanhCong(this); // Truyền this
                 this.Hide();
                 formXacNhan.ShowDialog();
                 this.Close();
@@ -102,7 +102,7 @@ namespace FormDNDK
                     {
                         cmd.Parameters.AddWithValue("@Contact", contact);
                         var result = cmd.ExecuteScalar();
-                        return result.ToString();
+                        return result?.ToString();
                     }
                 }
             }
