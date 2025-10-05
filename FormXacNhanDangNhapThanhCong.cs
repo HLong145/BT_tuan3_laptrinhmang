@@ -31,6 +31,8 @@ namespace FormDNDK
             {
                 _formDangNhap.ClearPassword();
 
+                _formDangNhap.LoadLoginAfterLogout();
+
                 // 🔹 Hiện lại form đăng nhập
                 _formDangNhap.Show();
 

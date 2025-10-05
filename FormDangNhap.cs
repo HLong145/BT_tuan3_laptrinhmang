@@ -16,6 +16,50 @@ namespace FormDNDK
         public FormDangNhap()
         {
             InitializeComponent();
+            LoadRememberedLogin();
+        }
+        private void LoadRememberedLogin()
+        {
+            if (Properties.Settings.Default.RememberMe)
+            {
+                tb_sdtmail.Text = Properties.Settings.Default.SavedUsername;
+                tb_pass.Text = Properties.Settings.Default.SavedPassword;
+                cb_remember.Checked = true;
+            }
+        }
+
+        private void SaveRememberedLogin(string username, string password)
+        {
+            if (cb_remember.Checked)
+            {
+                Properties.Settings.Default.RememberMe = true;
+                Properties.Settings.Default.SavedUsername = username;
+                Properties.Settings.Default.SavedPassword = password; // ⚠️ nếu cần bảo mật, có thể mã hóa
+            }
+            else
+            {
+                Properties.Settings.Default.RememberMe = false;
+                Properties.Settings.Default.SavedUsername = "";
+                Properties.Settings.Default.SavedPassword = "";
+            }
+
+            Properties.Settings.Default.Save();
+        }
+
+        public void LoadLoginAfterLogout()
+        {
+            if (Properties.Settings.Default.RememberMe)
+            {
+                tb_sdtmail.Text = Properties.Settings.Default.SavedUsername;
+                tb_pass.Text = Properties.Settings.Default.SavedPassword;
+                cb_remember.Checked = true;
+            }
+            else
+            {
+                tb_sdtmail.Text = "";
+                tb_pass.Text = "";
+                cb_remember.Checked = false;
+            }
         }
 
         public void ClearPassword()
@@ -75,6 +119,7 @@ namespace FormDNDK
 
             if (loginSuccess)
             {
+                SaveRememberedLogin(username, password);
                 MessageBox.Show("Đăng nhập thành công!",
                     "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -121,5 +166,6 @@ namespace FormDNDK
             formQuenMatKhau.ShowDialog();
             this.Show();
         }
+
     }
 }
