@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace FormDNDK
 {
     public class UserService
-    {   
+    {
         // ========================================
         // DÒNG NÀY CẦN CẬP NHẬT SAU KHI TẠO DB NHÁ
         // ========================================
@@ -96,10 +96,10 @@ namespace FormDNDK
                 {
                     conn.Open();
                     string query = @"
-                        SELECT COUNT(*) FROM Users 
-                        WHERE Username = @Username
-                        OR (Email IS NOT NULL AND Email = @Email)
-                        OR (Phone IS NOT NULL AND Phone = @Phone)";
+                        SELECT COUNT(*) FROM NGUOIDUNG 
+                        WHERE USERNAME = @Username
+                        OR (EMAIL IS NOT NULL AND EMAIL = @Email)
+                        OR (PHONE IS NOT NULL AND PHONE = @Phone)";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Username", username);
@@ -126,7 +126,7 @@ namespace FormDNDK
                 {
                     conn.Open();
                     string query = @"
-                        INSERT INTO Users (Username, Email, Phone, PasswordHash, Salt)
+                        INSERT INTO NGUOIDUNG (USERNAME, EMAIL, PHONE, PASSWORDHASH, SALT)
                         VALUES (@Username, @Email, @Phone, @PasswordHash, @Salt)"; 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -209,7 +209,7 @@ namespace FormDNDK
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "UPDATE Users SET PasswordHash=@Hash, Salt=@Salt WHERE Username=@Username";
+                    string query = "UPDATE NGUOIDUNG SET PASSWORDHASH=@Hash, SALT=@Salt WHERE USERNAME=@Username";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Hash", newHash);
@@ -283,7 +283,7 @@ namespace FormDNDK
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "SELECT PasswordHash, Salt FROM Users WHERE Username = @Username";
+                    string query = "SELECT PASSWORDHASH, SALT FROM NGUOIDUNG WHERE USERNAME = @Username";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Username", username);
@@ -298,8 +298,8 @@ namespace FormDNDK
                             }
 
                             // 3️⃣ Đọc hash và salt
-                            string storedHash = reader["PasswordHash"].ToString();
-                            string storedSalt = reader["Salt"].ToString();
+                            string storedHash = reader["PASSWORDHASH"].ToString();
+                            string storedSalt = reader["SALT"].ToString();
 
                             // 4️⃣ So sánh mật khẩu
                             bool verified = VerifyPassword_Sha256(password, storedHash, storedSalt);
@@ -336,7 +336,7 @@ namespace FormDNDK
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "SELECT Email, Phone FROM Users WHERE Username = @Username";
+                    string query = "SELECT EMAIL, PHONE FROM NGUOIDUNG WHERE USERNAME = @Username";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Username", username);
@@ -345,8 +345,8 @@ namespace FormDNDK
                             if (reader.Read())
                             {
                                 return (
-                                    reader["Email"]?.ToString(),
-                                    reader["Phone"]?.ToString()
+                                    reader["EMAIL"]?.ToString(),
+                                    reader["PHONE"]?.ToString()
                                 );
                             }
                         }
