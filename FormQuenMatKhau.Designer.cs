@@ -40,10 +40,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Black", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(147, 36);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(118, 29);
             label3.Name = "label3";
-            label3.Size = new Size(249, 38);
+            label3.Size = new Size(201, 31);
             label3.TabIndex = 3;
             label3.Text = "Quên mật khẩu ?";
             // 
@@ -51,10 +50,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(13, 95);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(10, 76);
             label2.Name = "label2";
-            label2.Size = new Size(519, 50);
+            label2.Size = new Size(421, 40);
             label2.TabIndex = 4;
             label2.Text = "Điền email hoặc số điện thoại gắn với tài khoản của bạn để \r\nnhận đường dẫn thay đổi mật khẩu";
             label2.TextAlign = ContentAlignment.TopCenter;
@@ -63,30 +61,28 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(119, 181);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(95, 145);
             label1.Name = "label1";
-            label1.Size = new Size(100, 25);
+            label1.Size = new Size(82, 20);
             label1.TabIndex = 5;
             label1.Text = "Email/SĐT";
             // 
             // tb_ten
             // 
-            tb_ten.Location = new Point(119, 227);
-            tb_ten.Margin = new Padding(4);
+            tb_ten.Location = new Point(95, 182);
             tb_ten.Name = "tb_ten";
-            tb_ten.Size = new Size(307, 31);
+            tb_ten.Size = new Size(246, 27);
             tb_ten.TabIndex = 7;
+            tb_ten.TextChanged += tb_ten_TextChanged;
             // 
             // btn_dangky
             // 
             btn_dangky.BackColor = Color.DarkCyan;
             btn_dangky.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_dangky.ForeColor = SystemColors.ButtonHighlight;
-            btn_dangky.Location = new Point(133, 303);
-            btn_dangky.Margin = new Padding(4);
+            btn_dangky.Location = new Point(106, 242);
             btn_dangky.Name = "btn_dangky";
-            btn_dangky.Size = new Size(279, 48);
+            btn_dangky.Size = new Size(223, 38);
             btn_dangky.TabIndex = 11;
             btn_dangky.Text = "TIẾP TỤC";
             btn_dangky.UseVisualStyleBackColor = false;
@@ -97,10 +93,9 @@
             button1.BackColor = Color.DarkCyan;
             button1.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(133, 372);
-            button1.Margin = new Padding(4);
+            button1.Location = new Point(106, 298);
             button1.Name = "button1";
-            button1.Size = new Size(279, 53);
+            button1.Size = new Size(223, 42);
             button1.TabIndex = 12;
             button1.Text = "QUAY LẠI ĐĂNG NHẬP";
             button1.UseVisualStyleBackColor = false;
@@ -108,16 +103,17 @@
             // 
             // FormQuenMatKhau
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
-            ClientSize = new Size(550, 536);
+            ClientSize = new Size(440, 429);
             Controls.Add(button1);
             Controls.Add(btn_dangky);
             Controls.Add(tb_ten);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(label3);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FormQuenMatKhau";
             Text = "FormQuenMatKhau";
             ResumeLayout(false);
