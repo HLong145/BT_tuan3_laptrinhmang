@@ -268,6 +268,63 @@ namespace FormDNDK
                 loginAttempts[username] = (attempts + 1, DateTime.Now);
             }
         }
+        // ========================================
+        // 🧩 7. Xác thực user khi đăng nhập
+        // ========================================
+
+        public bool VerifyUserLogin(string username, string password)
+        {
+            try
+            {
+                // 1️⃣ Kiểm tra số lần nhập sai (chống brute-force)
+                if (!CheckLoginAttempts(username))
+                    return false;
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "SELECT PasswordHash, Salt FROM Users WHERE Username = @Username";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Username", username);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            // 2️⃣ Không tìm thấy user
+                            if (!reader.Read())
+                            {
+                                MessageBox.Show("Tài khoản không tồn tại!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                RecordLoginAttempt(username, false);
+                                return false;
+                            }
+
+                            // 3️⃣ Đọc hash và salt
+                            string storedHash = reader["PasswordHash"].ToString();
+                            string storedSalt = reader["Salt"].ToString();
+
+                            // 4️⃣ So sánh mật khẩu
+                            bool verified = VerifyPassword_Sha256(password, storedHash, storedSalt);
+
+                            if (verified)
+                            {
+                                RecordLoginAttempt(username, true);
+                                return true;
+                            }
+                            else
+                            {
+                                RecordLoginAttempt(username, false);
+                                MessageBox.Show("Sai mật khẩu!", "Lỗi đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xác thực đăng nhập: " + ex.Message, "Lỗi DB", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
 
     }
 }
