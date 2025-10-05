@@ -50,7 +50,7 @@ namespace FormDNDK
                 return;
             }
 
-            if (newPass.Length < 6)
+            if (!_userService.IsValidPassword(newPass))
             {
                 MessageBox.Show("Mật khẩu phải có ít nhất 6 ký tự!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
