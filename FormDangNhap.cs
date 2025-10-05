@@ -18,6 +18,11 @@ namespace FormDNDK
             InitializeComponent();
         }
 
+        public void ClearPassword()
+        {
+            tb_pass.Text = string.Empty;
+            tb_sdtmail.Text = string.Empty;
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -95,10 +100,21 @@ namespace FormDNDK
                             "Kết quả kiểm tra", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             // 🧩 6. (Tạm thời dừng ở đây — chưa kết nối DB)
-            // Sau này sẽ thêm: kiểm tra DB + VerifyPassword + điều hướng form
+            // Sau này sẽ thêm: kiểm tra DB + VerifyPassword 
+
+            bool loginThanhCong = true; // Giả lập đăng nhập thành công để test chuyển form
+
+            if (loginThanhCong)
+            {
+
+                FormXacNhanDangNhapThanhCong formXacNhan = new FormXacNhanDangNhapThanhCong();
+                this.Hide();
+                formXacNhan.Show();
+               
+            }
         }
 
-        private void btn_forgotpass_Click(object sender, EventArgs e)
+    private void btn_forgotpass_Click(object sender, EventArgs e)
         {
             FormQuenMatKhau formQuenMatKhau = new FormQuenMatKhau();
             formQuenMatKhau.Show();

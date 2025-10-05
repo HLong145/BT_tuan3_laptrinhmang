@@ -23,7 +23,7 @@ namespace FormDNDK
             _userService = new UserService();
 
             // Gắn sự kiện click cho nút HOÀN TẤT
-            btn_dangky.Click += btn_dangky_Click;
+            btn_hoantat.Click += btn_hoantat_Click;
         }
 
         // Constructor mặc định (Visual Studio yêu cầu khi thiết kế)
@@ -32,7 +32,7 @@ namespace FormDNDK
         }
 
         // 🔹 Khi nhấn nút "HOÀN TẤT"
-        private void btn_dangky_Click(object sender, EventArgs e)
+        private void btn_hoantat_Click(object sender, EventArgs e)
         {
             string newPass = tb_pass.Text.Trim();
             string confirmPass = textBox1.Text.Trim();

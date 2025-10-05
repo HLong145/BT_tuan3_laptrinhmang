@@ -21,7 +21,7 @@ namespace FormDNDK
         }
 
         // Nút quay lại đăng nhập
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_dangnhap_Click(object sender, EventArgs e)
         {
             FormDangNhap formDangNhap = new FormDangNhap();
             formDangNhap.Show();
@@ -29,7 +29,7 @@ namespace FormDNDK
         }
 
         // Nút "TIẾP TỤC"
-        private void btn_dangky_Click(object sender, EventArgs e)
+        private void btn_tieptuc_Click(object sender, EventArgs e)
         {
             string input = tb_ten.Text.Trim();
 

@@ -36,8 +36,8 @@
             tb_s2 = new TextBox();
             tb_s5 = new TextBox();
             tb_s4 = new TextBox();
-            btn_dangky = new Button();
-            button1 = new Button();
+            btn_tieptuc = new Button();
+            btn_guilaima = new Button();
             SuspendLayout();
             // 
             // label1
@@ -116,30 +116,31 @@
             tb_s4.Size = new Size(45, 43);
             tb_s4.TabIndex = 11;
             // 
-            // btn_dangky
+            // btn_tieptuc
             // 
-            btn_dangky.BackColor = Color.DarkCyan;
-            btn_dangky.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_dangky.ForeColor = SystemColors.ButtonHighlight;
-            btn_dangky.Location = new Point(136, 192);
-            btn_dangky.Name = "btn_dangky";
-            btn_dangky.Size = new Size(223, 38);
-            btn_dangky.TabIndex = 12;
-            btn_dangky.Text = "TIẾP TỤC";
-            btn_dangky.UseVisualStyleBackColor = false;
-            btn_dangky.Click += btn_dangky_Click;
+            btn_tieptuc.BackColor = Color.DarkCyan;
+            btn_tieptuc.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_tieptuc.ForeColor = SystemColors.ButtonHighlight;
+            btn_tieptuc.Location = new Point(136, 192);
+            btn_tieptuc.Name = "btn_tieptuc";
+            btn_tieptuc.Size = new Size(223, 38);
+            btn_tieptuc.TabIndex = 12;
+            btn_tieptuc.Text = "TIẾP TỤC";
+            btn_tieptuc.UseVisualStyleBackColor = false;
+            btn_tieptuc.Click += btn_tieptuc_Click;
             // 
-            // button1
+            // btn_guilaima
             // 
-            button1.BackColor = Color.DarkCyan;
-            button1.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(136, 244);
-            button1.Name = "button1";
-            button1.Size = new Size(223, 38);
-            button1.TabIndex = 13;
-            button1.Text = "GỬI LẠI MÃ";
-            button1.UseVisualStyleBackColor = false;
+            btn_guilaima.BackColor = Color.DarkCyan;
+            btn_guilaima.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_guilaima.ForeColor = SystemColors.ButtonHighlight;
+            btn_guilaima.Location = new Point(136, 244);
+            btn_guilaima.Name = "btn_guilaima";
+            btn_guilaima.Size = new Size(223, 38);
+            btn_guilaima.TabIndex = 13;
+            btn_guilaima.Text = "GỬI LẠI MÃ";
+            btn_guilaima.UseVisualStyleBackColor = false;
+            btn_guilaima.Click += btn_guilaima_Click;
             // 
             // FormXacThucOTP
             // 
@@ -147,8 +148,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(512, 381);
-            Controls.Add(button1);
-            Controls.Add(btn_dangky);
+            Controls.Add(btn_guilaima);
+            Controls.Add(btn_tieptuc);
             Controls.Add(tb_s4);
             Controls.Add(tb_s5);
             Controls.Add(tb_s2);
@@ -174,7 +175,7 @@
         private TextBox tb_s2;
         private TextBox tb_s5;
         private TextBox tb_s4;
-        private Button btn_dangky;
-        private Button button1;
+        private Button btn_tieptuc;
+        private Button btn_guilaima;
     }
 }

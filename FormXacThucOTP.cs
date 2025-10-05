@@ -24,7 +24,7 @@ namespace FormDNDK
         }
 
         // 🔹 Khi nhấn nút "TIẾP TỤC"
-        private void btn_dangky_Click(object sender, EventArgs e)
+        private void btn_tieptuc_Click(object sender, EventArgs e)
         {
             // Ghép 6 ô nhập thành một chuỗi OTP
             string otp = string.Concat(
@@ -60,7 +60,7 @@ namespace FormDNDK
         }
 
         // 🔹 Khi nhấn nút "GỬI LẠI MÃ"
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_guilaima_Click(object sender, EventArgs e)
         {
             string newOtp = _userService.GenerateOtp(_username);
             MessageBox.Show($"Mã OTP mới của bạn là: {newOtp}\n(Chỉ hiển thị để test, sau này có thể gửi qua Email/SMS)",

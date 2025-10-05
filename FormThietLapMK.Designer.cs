@@ -33,7 +33,7 @@
             tb_pass = new TextBox();
             textBox1 = new TextBox();
             label2 = new Label();
-            btn_dangky = new Button();
+            btn_hoantat = new Button();
             SuspendLayout();
             // 
             // label1
@@ -83,18 +83,18 @@
             label2.TabIndex = 11;
             label2.Text = "XÁC NHẬN MẬT KHẨU MỚI";
             // 
-            // btn_dangky
+            // btn_hoantat
             // 
-            btn_dangky.BackColor = Color.DarkCyan;
-            btn_dangky.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_dangky.ForeColor = SystemColors.ButtonHighlight;
-            btn_dangky.Location = new Point(134, 271);
-            btn_dangky.Name = "btn_dangky";
-            btn_dangky.Size = new Size(223, 38);
-            btn_dangky.TabIndex = 13;
-            btn_dangky.Text = "HOÀN TẤT";
-            btn_dangky.UseVisualStyleBackColor = false;
-            btn_dangky.Click += btn_dangky_Click;
+            btn_hoantat.BackColor = Color.DarkCyan;
+            btn_hoantat.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_hoantat.ForeColor = SystemColors.ButtonHighlight;
+            btn_hoantat.Location = new Point(134, 271);
+            btn_hoantat.Name = "btn_hoantat";
+            btn_hoantat.Size = new Size(223, 38);
+            btn_hoantat.TabIndex = 13;
+            btn_hoantat.Text = "HOÀN TẤT";
+            btn_hoantat.UseVisualStyleBackColor = false;
+            btn_hoantat.Click += btn_hoantat_Click;
             // 
             // FormThietLapMK
             // 
@@ -102,7 +102,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(512, 381);
-            Controls.Add(btn_dangky);
+            Controls.Add(btn_hoantat);
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(tb_pass);
@@ -122,6 +122,6 @@
         private TextBox tb_pass;
         private TextBox textBox1;
         private Label label2;
-        private Button btn_dangky;
+        private Button btn_hoantat;
     }
 }

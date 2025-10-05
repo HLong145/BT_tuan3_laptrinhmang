@@ -87,7 +87,7 @@ namespace FormDNDK
                 isEmail ? contact : null,
                 isPhone ? contact : null,
                 storedHash,
-                newSalt 
+                newSalt
             );
 
             if (ok)

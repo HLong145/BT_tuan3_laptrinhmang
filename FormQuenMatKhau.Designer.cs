@@ -32,8 +32,8 @@
             label2 = new Label();
             label1 = new Label();
             tb_ten = new TextBox();
-            btn_dangky = new Button();
-            button1 = new Button();
+            btn_tieptuc = new Button();
+            btn_dangnhap = new Button();
             SuspendLayout();
             // 
             // label3
@@ -71,35 +71,35 @@
             // 
             tb_ten.Location = new Point(95, 182);
             tb_ten.Name = "tb_ten";
-            tb_ten.Size = new Size(246, 27);
+            tb_ten.Size = new Size(255, 27);
             tb_ten.TabIndex = 7;
             tb_ten.TextChanged += tb_ten_TextChanged;
             // 
-            // btn_dangky
+            // btn_tieptuc
             // 
-            btn_dangky.BackColor = Color.DarkCyan;
-            btn_dangky.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_dangky.ForeColor = SystemColors.ButtonHighlight;
-            btn_dangky.Location = new Point(106, 242);
-            btn_dangky.Name = "btn_dangky";
-            btn_dangky.Size = new Size(223, 38);
-            btn_dangky.TabIndex = 11;
-            btn_dangky.Text = "TIẾP TỤC";
-            btn_dangky.UseVisualStyleBackColor = false;
-            btn_dangky.Click += btn_dangky_Click;
+            btn_tieptuc.BackColor = Color.DarkCyan;
+            btn_tieptuc.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_tieptuc.ForeColor = SystemColors.ButtonHighlight;
+            btn_tieptuc.Location = new Point(106, 242);
+            btn_tieptuc.Name = "btn_tieptuc";
+            btn_tieptuc.Size = new Size(223, 38);
+            btn_tieptuc.TabIndex = 11;
+            btn_tieptuc.Text = "TIẾP TỤC";
+            btn_tieptuc.UseVisualStyleBackColor = false;
+            btn_tieptuc.Click += btn_tieptuc_Click;
             // 
-            // button1
+            // btn_dangnhap
             // 
-            button1.BackColor = Color.DarkCyan;
-            button1.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(106, 298);
-            button1.Name = "button1";
-            button1.Size = new Size(223, 42);
-            button1.TabIndex = 12;
-            button1.Text = "QUAY LẠI ĐĂNG NHẬP";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btn_dangnhap.BackColor = Color.DarkCyan;
+            btn_dangnhap.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_dangnhap.ForeColor = SystemColors.ButtonHighlight;
+            btn_dangnhap.Location = new Point(106, 298);
+            btn_dangnhap.Name = "btn_dangnhap";
+            btn_dangnhap.Size = new Size(223, 42);
+            btn_dangnhap.TabIndex = 12;
+            btn_dangnhap.Text = "QUAY LẠI ĐĂNG NHẬP";
+            btn_dangnhap.UseVisualStyleBackColor = false;
+            btn_dangnhap.Click += btn_dangnhap_Click;
             // 
             // FormQuenMatKhau
             // 
@@ -107,13 +107,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(440, 429);
-            Controls.Add(button1);
-            Controls.Add(btn_dangky);
+            Controls.Add(btn_dangnhap);
+            Controls.Add(btn_tieptuc);
             Controls.Add(tb_ten);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(label3);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "FormQuenMatKhau";
             Text = "FormQuenMatKhau";
             ResumeLayout(false);
@@ -126,7 +126,7 @@
         private Label label2;
         private Label label1;
         private TextBox tb_ten;
-        private Button btn_dangky;
-        private Button button1;
+        private Button btn_tieptuc;
+        private Button btn_dangnhap;
     }
 }
