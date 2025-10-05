@@ -15,9 +15,8 @@ namespace FormDNDK
         private void btn_formdn_Click(object sender, EventArgs e)
         {
             FormDangNhap fDN = new FormDangNhap();
-            this.Hide();
-            fDN.ShowDialog();
-            this.Show();
+            fDN.Show();
+            this.Close(); // Đóng form đăng ký
         }
 
         private void btn_dangky_Click(object sender, EventArgs e)
