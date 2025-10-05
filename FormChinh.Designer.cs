@@ -31,6 +31,8 @@
             label1 = new Label();
             btn_formdangnhap = new Button();
             btn_formdangky = new Button();
+            pictureBox4 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -67,18 +69,30 @@
             btn_formdangky.UseVisualStyleBackColor = false;
             btn_formdangky.Click += btn_formdangky_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.Logo_UIT_updated_svg;
+            pictureBox4.Location = new Point(33, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(45, 38);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 17;
+            pictureBox4.TabStop = false;
+            // 
             // FormChinh
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(650, 293);
+            Controls.Add(pictureBox4);
             Controls.Add(btn_formdangky);
             Controls.Add(btn_formdangnhap);
             Controls.Add(label1);
             Name = "FormChinh";
             Text = "FormChinh";
             Load += FormChinh_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -88,5 +102,6 @@
         private Label label1;
         private Button btn_formdangnhap;
         private Button btn_formdangky;
+        private PictureBox pictureBox4;
     }
 }

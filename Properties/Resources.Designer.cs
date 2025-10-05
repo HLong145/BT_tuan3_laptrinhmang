@@ -63,6 +63,119 @@ namespace FormDNDK.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _181_1812176_phone_number_phone_icon {
+            get {
+                object obj = ResourceManager.GetObject("181-1812176_phone-number-phone-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2903837 {
+            get {
+                object obj = ResourceManager.GetObject("2903837", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap envelope_icon_for_graphic_and_web_design_vector {
+            get {
+                object obj = ResourceManager.GetObject("envelope-icon-for-graphic-and-web-design-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("images-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images1 {
+            get {
+                object obj = ResourceManager.GetObject("images1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_UIT_updated_svg {
+            get {
+                object obj = ResourceManager.GetObject("Logo_UIT_updated.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_white_telephone_logo_computer_icons_telephone_mobile_phones_telephone_number_miscellaneous_text_thumbnail {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-white-telephone-logo-computer-icons-telephone-mobile-phones-telephone" +
+                        "-number-miscellaneous-text-thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_white_telephone_logo_computer_icons_telephone_mobile_phones_telephone_number_miscellaneous_text_thumbnail_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-white-telephone-logo-computer-icons-telephone-mobile-phones-telephone" +
+                        "-number-miscellaneous-text-thumbnail-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_white_telephone_logo_computer_icons_telephone_mobile_phones_telephone_number_miscellaneous_text_thumbnail_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-white-telephone-logo-computer-icons-telephone-mobile-phones-telephone" +
+                        "-number-miscellaneous-text-thumbnail-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RecaptchaLogo_svg {
             get {
                 object obj = ResourceManager.GetObject("RecaptchaLogo.svg", resourceCulture);

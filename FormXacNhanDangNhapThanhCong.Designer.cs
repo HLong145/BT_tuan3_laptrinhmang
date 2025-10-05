@@ -30,6 +30,8 @@
         {
             lb_Welcome = new Label();
             btn_dangxuat = new Button();
+            pictureBox4 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // lb_Welcome
@@ -54,16 +56,28 @@
             btn_dangxuat.UseVisualStyleBackColor = false;
             btn_dangxuat.Click += btn_dangxuat_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.Logo_UIT_updated_svg;
+            pictureBox4.Location = new Point(12, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(45, 38);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 18;
+            pictureBox4.TabStop = false;
+            // 
             // FormXacNhanDangNhapThanhCong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(525, 581);
+            Controls.Add(pictureBox4);
             Controls.Add(btn_dangxuat);
             Controls.Add(lb_Welcome);
             Name = "FormXacNhanDangNhapThanhCong";
             Text = "FormXacNhanDangNhapThanhCong";
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -72,5 +86,6 @@
 
         private Label lb_Welcome;
         private Button btn_dangxuat;
+        private PictureBox pictureBox4;
     }
 }

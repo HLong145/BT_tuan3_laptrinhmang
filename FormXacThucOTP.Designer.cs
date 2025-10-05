@@ -38,6 +38,8 @@
             tb_s4 = new TextBox();
             btn_tieptuc = new Button();
             btn_guilaima = new Button();
+            pictureBox4 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -142,12 +144,23 @@
             btn_guilaima.UseVisualStyleBackColor = false;
             btn_guilaima.Click += btn_guilaima_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.Logo_UIT_updated_svg;
+            pictureBox4.Location = new Point(12, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(45, 38);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 18;
+            pictureBox4.TabStop = false;
+            // 
             // FormXacThucOTP
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(512, 381);
+            Controls.Add(pictureBox4);
             Controls.Add(btn_guilaima);
             Controls.Add(btn_tieptuc);
             Controls.Add(tb_s4);
@@ -161,6 +174,7 @@
             Margin = new Padding(2);
             Name = "FormXacThucOTP";
             Text = "FormXacThucOTP";
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -177,5 +191,6 @@
         private TextBox tb_s4;
         private Button btn_tieptuc;
         private Button btn_guilaima;
+        private PictureBox pictureBox4;
     }
 }

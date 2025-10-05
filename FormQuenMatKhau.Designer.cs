@@ -34,6 +34,12 @@
             tb_ten = new TextBox();
             btn_tieptuc = new Button();
             btn_dangnhap = new Button();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -101,12 +107,45 @@
             btn_dangnhap.UseVisualStyleBackColor = false;
             btn_dangnhap.Click += btn_dangnhap_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.Logo_UIT_updated_svg;
+            pictureBox4.Location = new Point(12, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(45, 38);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 18;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.images_removebg_preview;
+            pictureBox5.Location = new Point(404, 170);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(39, 39);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 21;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.png_clipart_white_telephone_logo_computer_icons_telephone_mobile_phones_telephone_number_miscellaneous_text_thumbnail_removebg_preview;
+            pictureBox1.Location = new Point(350, 170);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(45, 38);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
+            // 
             // FormQuenMatKhau
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
-            ClientSize = new Size(440, 429);
+            ClientSize = new Size(454, 429);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox4);
             Controls.Add(btn_dangnhap);
             Controls.Add(btn_tieptuc);
             Controls.Add(tb_ten);
@@ -116,6 +155,9 @@
             Margin = new Padding(2);
             Name = "FormQuenMatKhau";
             Text = "FormQuenMatKhau";
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -128,5 +170,8 @@
         private TextBox tb_ten;
         private Button btn_tieptuc;
         private Button btn_dangnhap;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox1;
     }
 }

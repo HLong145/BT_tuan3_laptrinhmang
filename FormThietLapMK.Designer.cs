@@ -34,6 +34,12 @@
             textBox1 = new TextBox();
             label2 = new Label();
             btn_hoantat = new Button();
+            pictureBox4 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -96,12 +102,45 @@
             btn_hoantat.UseVisualStyleBackColor = false;
             btn_hoantat.Click += btn_hoantat_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.Logo_UIT_updated_svg;
+            pictureBox4.Location = new Point(12, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(45, 38);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 18;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._2903837;
+            pictureBox2.Location = new Point(382, 111);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(57, 44);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 19;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._2903837;
+            pictureBox1.Location = new Point(382, 185);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(57, 44);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
+            // 
             // FormThietLapMK
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(512, 381);
+            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox4);
             Controls.Add(btn_hoantat);
             Controls.Add(label2);
             Controls.Add(textBox1);
@@ -111,6 +150,9 @@
             Margin = new Padding(2);
             Name = "FormThietLapMK";
             Text = "FormThietLapMK";
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -123,5 +165,8 @@
         private TextBox textBox1;
         private Label label2;
         private Button btn_hoantat;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
     }
 }
