@@ -13,7 +13,7 @@ namespace FormDNDK
         // ========================================
         // DÒNG NÀY CẦN CẬP NHẬT SAU KHI TẠO DB NHÁ
         // ========================================
-        private readonly string connectionString = "Server=localhost;Database=UserDB;Integrated Security=True;";
+        private readonly string connectionString = "Server=localhost;Database=USERDB;Trusted_Connection=True;TrustServerCertificate=True;";
 
         // ================================
         // 🧩 1. Kiểm tra hợp lệ đầu vào 
