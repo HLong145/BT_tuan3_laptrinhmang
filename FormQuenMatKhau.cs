@@ -83,8 +83,6 @@ namespace FormDNDK
                 {
                     conn.Open();
 
-                    // ✅ SỬA: Đổi từ "Users" thành "NGUOIDUNG"
-                    // ✅ SỬA: Đổi từ "Username", "Email", "Phone" thành chữ hoa
                     string query = _userService.IsValidEmail(contact)
                         ? "SELECT USERNAME FROM NGUOIDUNG WHERE EMAIL = @Contact"
                         : "SELECT USERNAME FROM NGUOIDUNG WHERE PHONE = @Contact";
