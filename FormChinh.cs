@@ -25,12 +25,15 @@ namespace FormDNDK
         private void btn_formdangnhap_Click(object sender, EventArgs e)
         {
             FormDangNhap fDN = new FormDangNhap();
+            this.Hide();
             fDN.Show();
         }
 
         private void btn_formdangky_Click(object sender, EventArgs e)
         {
+
             FormDangKy fDK = new FormDangKy();
+            this.Hide();
             fDK.Show();
         }
     }

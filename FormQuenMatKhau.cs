@@ -23,8 +23,6 @@ namespace FormDNDK
         // Nút quay lại đăng nhập
         private void btn_dangnhap_Click(object sender, EventArgs e)
         {
-            FormDangNhap formDangNhap = new FormDangNhap();
-            formDangNhap.Show();
             this.Close();
         }
 
