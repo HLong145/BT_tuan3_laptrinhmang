@@ -1,6 +1,6 @@
 #  Bài tập lập trình mạng – Ứng dụng Đăng ký & Đăng nhập (FormDNDK)
 
-##  Thông tin nhóm
+##  Thông tin nhóm 8
 
 | MSSV | Họ và Tên |
 |------|------------|
