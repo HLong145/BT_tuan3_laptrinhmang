@@ -166,7 +166,6 @@ namespace FormDNDK
             FormQuenMatKhau formQuenMatKhau = new FormQuenMatKhau();
             this.Hide();
             formQuenMatKhau.ShowDialog();
-            this.Show();
         }
 
     }
