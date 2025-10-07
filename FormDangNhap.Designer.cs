@@ -56,9 +56,10 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(155, 33);
+            label1.Location = new Point(194, 41);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(135, 31);
+            label1.Size = new Size(167, 38);
             label1.TabIndex = 0;
             label1.Text = "Đăng nhập";
             // 
@@ -66,9 +67,10 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(144, 82);
+            label2.Location = new Point(180, 102);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(163, 20);
+            label2.Size = new Size(201, 25);
             label2.TabIndex = 1;
             label2.Text = "Đăng nhập để tiếp tục";
             // 
@@ -76,35 +78,39 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(78, 140);
+            label3.Location = new Point(98, 175);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(323, 20);
+            label3.Size = new Size(356, 25);
             label3.TabIndex = 2;
-            label3.Text = "SỐ ĐIỆN THOẠI HAY EMAIL HAY USERNAME";
+            label3.Text = "SỐ ĐIỆN THOẠI/EMAIL HAY USERNAME";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(78, 233);
+            label4.Location = new Point(98, 291);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(90, 20);
+            label4.Size = new Size(110, 25);
             label4.TabIndex = 3;
             label4.Text = "MẬT KHẨU";
             // 
             // tb_sdtmail
             // 
-            tb_sdtmail.Location = new Point(78, 179);
+            tb_sdtmail.Location = new Point(98, 224);
+            tb_sdtmail.Margin = new Padding(4, 4, 4, 4);
             tb_sdtmail.Name = "tb_sdtmail";
-            tb_sdtmail.Size = new Size(236, 27);
+            tb_sdtmail.Size = new Size(294, 31);
             tb_sdtmail.TabIndex = 4;
             // 
             // tb_pass
             // 
-            tb_pass.Location = new Point(78, 277);
+            tb_pass.Location = new Point(98, 346);
+            tb_pass.Margin = new Padding(4, 4, 4, 4);
             tb_pass.Name = "tb_pass";
             tb_pass.PasswordChar = '*';
-            tb_pass.Size = new Size(236, 27);
+            tb_pass.Size = new Size(294, 31);
             tb_pass.TabIndex = 5;
             // 
             // btn_dangnhap
@@ -112,9 +118,10 @@
             btn_dangnhap.BackColor = Color.Teal;
             btn_dangnhap.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn_dangnhap.ForeColor = SystemColors.ButtonHighlight;
-            btn_dangnhap.Location = new Point(78, 352);
+            btn_dangnhap.Location = new Point(98, 440);
+            btn_dangnhap.Margin = new Padding(4, 4, 4, 4);
             btn_dangnhap.Name = "btn_dangnhap";
-            btn_dangnhap.Size = new Size(236, 44);
+            btn_dangnhap.Size = new Size(295, 55);
             btn_dangnhap.TabIndex = 6;
             btn_dangnhap.Text = "ĐĂNG NHẬP";
             btn_dangnhap.UseVisualStyleBackColor = false;
@@ -123,9 +130,10 @@
             // cb_remember
             // 
             cb_remember.AutoSize = true;
-            cb_remember.Location = new Point(15, 432);
+            cb_remember.Location = new Point(19, 540);
+            cb_remember.Margin = new Padding(4, 4, 4, 4);
             cb_remember.Name = "cb_remember";
-            cb_remember.Size = new Size(129, 24);
+            cb_remember.Size = new Size(154, 29);
             cb_remember.TabIndex = 7;
             cb_remember.Text = "Remember me";
             cb_remember.UseVisualStyleBackColor = true;
@@ -135,9 +143,10 @@
             btn_forgotpass.BackColor = Color.LightCyan;
             btn_forgotpass.FlatAppearance.BorderSize = 0;
             btn_forgotpass.FlatStyle = FlatStyle.Flat;
-            btn_forgotpass.Location = new Point(192, 432);
+            btn_forgotpass.Location = new Point(240, 540);
+            btn_forgotpass.Margin = new Padding(4, 4, 4, 4);
             btn_forgotpass.Name = "btn_forgotpass";
-            btn_forgotpass.Size = new Size(221, 29);
+            btn_forgotpass.Size = new Size(276, 36);
             btn_forgotpass.TabIndex = 8;
             btn_forgotpass.Text = "FORGOT PASSWORD?";
             btn_forgotpass.UseVisualStyleBackColor = false;
@@ -149,9 +158,10 @@
             btn_taotk.FlatAppearance.BorderSize = 0;
             btn_taotk.FlatStyle = FlatStyle.Flat;
             btn_taotk.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btn_taotk.Location = new Point(78, 467);
+            btn_taotk.Location = new Point(98, 584);
+            btn_taotk.Margin = new Padding(4, 4, 4, 4);
             btn_taotk.Name = "btn_taotk";
-            btn_taotk.Size = new Size(221, 31);
+            btn_taotk.Size = new Size(276, 39);
             btn_taotk.TabIndex = 9;
             btn_taotk.Text = "TẠO TÀI KHOẢN";
             btn_taotk.UseVisualStyleBackColor = false;
@@ -162,9 +172,10 @@
             cb_captcha.AutoSize = true;
             cb_captcha.BackColor = SystemColors.ControlLight;
             cb_captcha.FlatStyle = FlatStyle.Popup;
-            cb_captcha.Location = new Point(88, 516);
+            cb_captcha.Location = new Point(110, 645);
+            cb_captcha.Margin = new Padding(4, 4, 4, 4);
             cb_captcha.Name = "cb_captcha";
-            cb_captcha.Size = new Size(131, 24);
+            cb_captcha.Size = new Size(160, 29);
             cb_captcha.TabIndex = 10;
             cb_captcha.Text = "I'm not a robot ";
             cb_captcha.UseVisualStyleBackColor = false;
@@ -173,9 +184,10 @@
             // 
             pictureBox1.BackColor = SystemColors.ControlLight;
             pictureBox1.Image = Properties.Resources.RecaptchaLogo_svg;
-            pictureBox1.Location = new Point(246, 504);
+            pictureBox1.Location = new Point(308, 630);
+            pictureBox1.Margin = new Padding(4, 4, 4, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(53, 48);
+            pictureBox1.Size = new Size(66, 60);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
@@ -186,18 +198,20 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = SystemColors.ControlLight;
-            button1.Location = new Point(78, 504);
+            button1.Location = new Point(98, 630);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(221, 48);
+            button1.Size = new Size(276, 60);
             button1.TabIndex = 13;
             button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.png_clipart_white_telephone_logo_computer_icons_telephone_mobile_phones_telephone_number_miscellaneous_text_thumbnail_removebg_preview;
-            pictureBox4.Location = new Point(320, 168);
+            pictureBox4.Location = new Point(400, 210);
+            pictureBox4.Margin = new Padding(4, 4, 4, 4);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(45, 38);
+            pictureBox4.Size = new Size(56, 48);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 17;
             pictureBox4.TabStop = false;
@@ -205,9 +219,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources._2903837;
-            pictureBox2.Location = new Point(320, 260);
+            pictureBox2.Location = new Point(400, 325);
+            pictureBox2.Margin = new Padding(4, 4, 4, 4);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(57, 44);
+            pictureBox2.Size = new Size(71, 55);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 18;
             pictureBox2.TabStop = false;
@@ -215,9 +230,10 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.images_removebg_preview;
-            pictureBox5.Location = new Point(374, 168);
+            pictureBox5.Location = new Point(468, 210);
+            pictureBox5.Margin = new Padding(4, 4, 4, 4);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(39, 39);
+            pictureBox5.Size = new Size(49, 49);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 19;
             pictureBox5.TabStop = false;
@@ -225,19 +241,20 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Logo_UIT_updated_svg;
-            pictureBox3.Location = new Point(12, 12);
+            pictureBox3.Location = new Point(15, 15);
+            pictureBox3.Margin = new Padding(4, 4, 4, 4);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(45, 38);
+            pictureBox3.Size = new Size(56, 48);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 20;
             pictureBox3.TabStop = false;
             // 
             // FormDangNhap
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
-            ClientSize = new Size(427, 682);
+            ClientSize = new Size(534, 852);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox2);
@@ -255,6 +272,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "FormDangNhap";
             Text = "FormDangNhap";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
