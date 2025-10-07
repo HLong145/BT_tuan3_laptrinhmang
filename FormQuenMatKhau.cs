@@ -60,7 +60,6 @@ namespace FormDNDK
                 // Sinh OTP
                 string otp = _userService.GenerateOtp(username);
 
-                // ⚠️ Ở đây tạm hiển thị OTP cho demo
                 MessageBox.Show($"Mã OTP của bạn là: {otp}\n(Chỉ hiển thị để test, sau này sẽ gửi qua email/SMS.)",
                                 "OTP được tạo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -79,12 +78,16 @@ namespace FormDNDK
         {
             try
             {
-                using (var conn = new Microsoft.Data.SqlClient.SqlConnection("Server=localhost;Database=UserDB;Integrated Security=True;"))
+                using (var conn = new Microsoft.Data.SqlClient.SqlConnection(
+                    "Server=localhost;Database=USERDB;Integrated Security=True;TrustServerCertificate=True;"))
                 {
                     conn.Open();
+
+                    // ✅ SỬA: Đổi từ "Users" thành "NGUOIDUNG"
+                    // ✅ SỬA: Đổi từ "Username", "Email", "Phone" thành chữ hoa
                     string query = _userService.IsValidEmail(contact)
-                        ? "SELECT Username FROM Users WHERE Email = @Contact"
-                        : "SELECT Username FROM Users WHERE Phone = @Contact";
+                        ? "SELECT USERNAME FROM NGUOIDUNG WHERE EMAIL = @Contact"
+                        : "SELECT USERNAME FROM NGUOIDUNG WHERE PHONE = @Contact";
 
                     using (var cmd = new Microsoft.Data.SqlClient.SqlCommand(query, conn))
                     {

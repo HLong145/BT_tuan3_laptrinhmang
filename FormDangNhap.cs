@@ -34,7 +34,7 @@ namespace FormDNDK
             {
                 Properties.Settings.Default.RememberMe = true;
                 Properties.Settings.Default.SavedUsername = username;
-                Properties.Settings.Default.SavedPassword = password; // ⚠️ nếu cần bảo mật, có thể mã hóa
+                Properties.Settings.Default.SavedPassword = password;
             }
             else
             {
@@ -136,18 +136,20 @@ namespace FormDNDK
             try
             {
                 using (var conn = new Microsoft.Data.SqlClient.SqlConnection(
-                    "Server=localhost;Database=UserDB;Integrated Security=True;"))
+                    "Server=localhost;Database=USERDB;Integrated Security=True;TrustServerCertificate=True;"))
                 {
                     conn.Open();
+                    // ✅ SỬA: Đổi từ "Users" thành "NGUOIDUNG"
+                    // ✅ SỬA: Đổi từ "Username" thành "USERNAME"
                     string query = isEmail
-                        ? "SELECT Username FROM Users WHERE Email = @Contact"
-                        : "SELECT Username FROM Users WHERE Phone = @Contact";
+                        ? "SELECT USERNAME FROM NGUOIDUNG WHERE EMAIL = @Contact"
+                        : "SELECT USERNAME FROM NGUOIDUNG WHERE PHONE = @Contact";
 
                     using (var cmd = new Microsoft.Data.SqlClient.SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Contact", contact);
                         var result = cmd.ExecuteScalar();
-                        return result.ToString();
+                        return result?.ToString();
                     }
                 }
             }
