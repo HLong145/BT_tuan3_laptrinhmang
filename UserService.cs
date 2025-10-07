@@ -1,17 +1,18 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Data;
+using System.Security.Cryptography; 
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Security.Cryptography; 
-using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace FormDNDK
 {
     public class UserService
     {
         // ========================================
-        // DÒNG NÀY CẦN CẬP NHẬT SAU KHI TẠO DB NHÁ
+        // CONNECT STRING DỂ KẾT NỐI VỚI DATABASE
         // ========================================
         private readonly string connectionString = "Server=localhost;Database=USERDB;Trusted_Connection=True;TrustServerCertificate=True;";
 
@@ -198,7 +199,7 @@ namespace FormDNDK
         // 🧩 5. Reset mật khẩu người dùng
         // ========================================
 
-        public bool ResetPassword(string username, string newPassword)
+        public bool ResetPassword(string emailOrNull,string phoneOrNull, string newPassword)
         {
             try
             {
@@ -209,12 +210,24 @@ namespace FormDNDK
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "UPDATE NGUOIDUNG SET PASSWORDHASH=@Hash, SALT=@Salt WHERE USERNAME=@Username";
+
+                    // Xây dựng câu truy vấn linh hoạt tùy theo thông tin được cung cấp
+                    string query = "UPDATE NGUOIDUNG SET PASSWORDHASH=@Hash, SALT=@Salt WHERE 1=1";
+
+                    if (!string.IsNullOrEmpty(emailOrNull))
+                        query += " AND EMAIL=@Email";
+                    if (!string.IsNullOrEmpty(phoneOrNull))
+                        query += " AND PHONE=@Phone";
+
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Hash", newHash);
                         cmd.Parameters.AddWithValue("@Salt", newSalt);
-                        cmd.Parameters.AddWithValue("@Username", username);
+
+                        if (!string.IsNullOrEmpty(emailOrNull))
+                            cmd.Parameters.AddWithValue("@Email", emailOrNull);
+                        if (!string.IsNullOrEmpty(phoneOrNull))
+                            cmd.Parameters.AddWithValue("@Phone", phoneOrNull);
 
                         int rows = cmd.ExecuteNonQuery();
                         return rows > 0;
