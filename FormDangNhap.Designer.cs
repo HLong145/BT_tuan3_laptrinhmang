@@ -78,9 +78,9 @@
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(78, 140);
             label3.Name = "label3";
-            label3.Size = new Size(203, 20);
+            label3.Size = new Size(323, 20);
             label3.TabIndex = 2;
-            label3.Text = "SỐ ĐIỆN THOẠI HAY EMAIL";
+            label3.Text = "SỐ ĐIỆN THOẠI HAY EMAIL HAY USERNAME";
             // 
             // label4
             // 
