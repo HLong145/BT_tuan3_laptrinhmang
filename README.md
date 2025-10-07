@@ -93,12 +93,12 @@ và lưu ảnh vào thư mục `screenshots/` trong project, sau đó thay link 
 
 | 🧩 Tên Form | 💬 Mô tả chức năng | 🖼️ Ảnh minh họa |
 |--------------|--------------------|------------------|
-| **FormChinh** | Màn hình chính hiển thị thông tin người dùng sau khi đăng nhập thành công. | ![FormChinh](screenshots/FormChinh.png) |
+| **FormChinh** | Màn hình chính cho phép người dùng lựa chọn đăng nhập hay đăng xuất. | ![FormChinh](screenshots/FormChinh.png) |
 | **FormDangKy** | Cho phép người dùng tạo tài khoản mới, nhập tên đăng nhập, mật khẩu, xác nhận mật khẩu và email. | ![FormDangKy](screenshots/FormDangKy.png) |
 | **FormDangNhap** | Màn hình đăng nhập với tính năng Remember Me, xác thực người dùng và chuyển đến form chính khi thành công. | ![FormDangNhap](screenshots/FormDangNhap.png) |
 | **FormQuenMatKhau** | Cho phép người dùng nhập email đã đăng ký để nhận mã OTP khôi phục mật khẩu. | ![FormQuenMatKhau](screenshots/FormQuenMatKhau.png) |
 | **FormXacThucOTP** | Màn hình xác thực mã OTP được gửi đến email người dùng để đặt lại mật khẩu. | ![FormXacThucOTP](screenshots/FormXacThucOTP.png) |
 | **FormThietLapMK** | Cho phép người dùng nhập và xác nhận mật khẩu mới sau khi xác thực OTP thành công. | ![FormThietLapMK](screenshots/FormThietLapMK.png) |
-| **FormXacNhanDangNhapThanhCong** | Hiển thị thông báo đăng nhập thành công trước khi chuyển đến FormChinh. | ![FormXacNhanDangNhapThanhCong](screenshots/FormXacNhanDangNhapThanhCong.png) |
+| **FormXacNhanDangNhapThanhCong** | Hiển thị thông báo đăng nhập thành công. | ![FormXacNhanDangNhapThanhCong](screenshots/FormXacNhanDangNhapThanhCong.png) |
 
 
