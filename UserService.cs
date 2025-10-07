@@ -14,7 +14,7 @@ namespace FormDNDK
         // ========================================
         // CONNECT STRING DỂ KẾT NỐI VỚI DATABASE
         // ========================================
-        private readonly string connectionString = "Server=localhost;Database=USERDB;Trusted_Connection=True;TrustServerCertificate=True;";
+        private readonly string connectionString = "Server=localhost;Database=UserDB;Integrated Security=True;";
 
         // ================================
         // 🧩 1. Kiểm tra hợp lệ đầu vào 
